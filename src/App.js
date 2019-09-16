@@ -16,7 +16,7 @@ function App() {
   useEffect( () => {
     axios.get('https://api.themoviedb.org/4/list/121401?page=1&api_key=REDACTED_TMDB_API_KEY')
     .then(response => {
-      // console.log(response.data.results)
+      console.log(response.data.results)
       const movieData1 = response.data.results
       setMovie1(movieData1)
     })
